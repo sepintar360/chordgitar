@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+
+    <title>HOME - Chord Guitar Full</title>  
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="cordova.js"></script> 
+    <script src="js/app.js"></script> 
+    <script src="xdk/init-dev.js"></script>
+	<script src="js/komplit.js"></script>
+	<script>var message="Chord Guitar Full";</script>
+	<script type="text/javascript" src="js/head.min.js"></script>
+    <script>head.load("js/neon.js");</script>
+
+	
+	
+	<script>
+
+$(document).ready(function(){
+$('#box-loadload').delay(1500).fadeOut('fast');
+	
+				sessionStorage.setItem("refpage", "kosong"); 
+				localStorage.setItem("Count_Ganalytics", "no");
+
+				
+var isibook = '';
+for(var i=0, len=localStorage.length; i<len; i++) {
+    var key = localStorage.key(i);
+    var value = localStorage[key];
+	if(key.match(/cccc/)) {
+	var key = key.replace(/cccc/i, '');
+    var isibook = isibook +  "<a href=\"chord.html#"+ key +"\"><h4>"+value+"</h4></a>"; }
+	
+}
+
+if(isibook == '') {
+$('#mybookmarkchord').append('<center>How to bookmark?<br>Just click this icon<br><span style="font-size:50px;color:silver"><img style="width:32px;" src="bm1.png"></span><br>on chord area.</center>');}
+else {
+$('#mybookmarkchord').append(isibook); }
+
+
+if( (!localStorage.getItem("urlhomepromodefault") || localStorage.getItem("urlhomepromodefault") == ''))
+{ localStorage.setItem("urlhomepromodefault", "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_e002.txt"); }
+
+if( (!localStorage.getItem("urlhometoptendefault") || localStorage.getItem("urlhometoptendefault") == ''))
+{ localStorage.setItem("urlhometoptendefault", "https://moresharecorp.github.io/kuncilagu.exe.bz/toptenandroid.php_barat2c.html"); }
+	 
+if( (localStorage.getItem("cachetopten") || localStorage.getItem("cachetopten") != ''))
+{ $("#topfive").empty(); $('#topfive').append(localStorage.getItem("cachetopten")); }
+
+if( (localStorage.getItem("cachepromo") || localStorage.getItem("cachepromo") != ''))
+{ $("#promokhususatas").empty(); $('#promokhususatas').append(localStorage.getItem("cachepromo")); }
+
+var dtnow = new Date();
+var tmnow = dtnow.getTime();
+var tmnext = dtnow.getTime()+(3600000*1);
+if (!sessionStorage.getItem("logOnceTimehome") || sessionStorage.getItem("logOnceTimehome") < tmnow || !localStorage.getItem("cachetopten") || localStorage.getItem("cachetopten") == '')
+{
+sessionStorage.setItem("logOnceTimehome", tmnext); 
+/*******************************/
+var url0 = ''+localStorage.getItem("urlhometoptendefault")+'?v='+localStorage.getItem("clearingcache")+'';
+$.get(url0, function(data) {
+
+if(data.indexOf("THIS WEEK") > -1) { 
+$("#topfive").empty();
+$("#topfive").html(data); 
+localStorage.setItem("cachetopten", data);
+} else { $("#topfive").empty(); $('#topfive').append(localStorage.getItem("cachetopten"));  }
+     });
+	 
+	 
+var url = ''+localStorage.getItem("urlhomepromodefault")+'?v='+localStorage.getItem("clearingcache")+'';
+$.get(url, function(data) {
+
+if(data.indexOf("Request") > -1) { 
+$("#promokhususatas").empty();
+$('#promokhususatas').html(data); 
+localStorage.setItem("cachepromo", data);
+} else { $("#promokhususatas").empty(); $('#promokhususatas').append(localStorage.getItem("cachepromo"));  }
+     });
+/*******************************/
+}
+	 
+
+
+
+	 
+
+	 
+	 
+
+    var d = new Date();
+    var jam = d.getHours();
+    var menit = d.getMinutes();
+	if(menit < 10) { var menit = '0'+menit; }
+    var jammenitskr = jam+''+menit;
+
+if( (!localStorage.getItem("sudahsolat") || localStorage.getItem("sudahsolat") == ''))
+{ localStorage.setItem("sudahsolat", "belum"); }
+	
+var subuha = '515';
+var subuhb = '545';
+var zuhura = '1330';
+var zuhurb = '1430';
+var asara = '1545';
+var asarb = '1715';
+var magriba = '1840';
+var magribb = '1850';
+var isaa = '2011';
+var isab = '2359';
+var warningazan1 = 'FOR MUSLIM!\nBagi yang belum SOLAT ';
+var warningazan2 = '! Mohon solat dulu bos ya, baru nyanyi-nyanyi lagi. Semoga aplikasi ini bermanfaat dan sekaligus memberi hidayah (amin).';
+
+if((jammenitskr >= subuha && jammenitskr <= subuhb) && 
+(!localStorage.getItem("sudahsolat") || localStorage.getItem("sudahsolat") == 'belum')
+&& (localStorage.getItem("IpUserCache") == 'ID'))
+{
+localStorage.setItem("sudahsolat", "sudah");
+alert(warningazan1+'SUBUH'+warningazan2);
+}
+
+else if((jammenitskr >= zuhura && jammenitskr <= zuhurb) && 
+(!localStorage.getItem("sudahsolat") || localStorage.getItem("sudahsolat") == 'belum')
+&& (localStorage.getItem("IpUserCache") == 'ID'))
+{
+localStorage.setItem("sudahsolat", "sudah");
+alert(warningazan1+'DZUHUR'+warningazan2);
+}
+
+else if((jammenitskr >= asara && jammenitskr <= asarb) && 
+(!localStorage.getItem("sudahsolat") || localStorage.getItem("sudahsolat") == 'belum')
+&& (localStorage.getItem("IpUserCache") == 'ID'))
+{
+localStorage.setItem("sudahsolat", "sudah");
+alert(warningazan1+'ASHAR'+warningazan2);
+}
+
+else if((jammenitskr >= magriba && jammenitskr <= magribb) && 
+(!localStorage.getItem("sudahsolat") || localStorage.getItem("sudahsolat") == 'belum')
+&& (localStorage.getItem("IpUserCache") == 'ID'))
+{
+localStorage.setItem("sudahsolat", "sudah");
+alert(warningazan1+'MAGRIB'+warningazan2);
+}
+
+else if((jammenitskr >= isaa && jammenitskr <= isab) && 
+(!localStorage.getItem("sudahsolat") || localStorage.getItem("sudahsolat") == 'belum')
+&& (localStorage.getItem("IpUserCache") == 'ID'))
+{
+localStorage.setItem("sudahsolat", "sudah");
+alert(warningazan1+'ISYA'+warningazan2);
+}
+
+else if(
+(jammenitskr >= 501 && jammenitskr <= 514) || 
+(jammenitskr >= 1311 && jammenitskr <= 1329) || 
+(jammenitskr >= 1515 && jammenitskr <= 1544) || 
+(jammenitskr >= 1810 && jammenitskr <= 1839) || 
+(jammenitskr >= 1930 && jammenitskr <= 2010) || 
+(jammenitskr >= 2130 && jammenitskr <= 2159) )
+{
+//Clear storage session
+localStorage.setItem("sudahsolat", "belum");
+}
+});
+
+
+
+
+</script>
+</head>
+<body> 
+<div id="box-loadload"><center><br><br><br><br><img style="width:200px" src="loading.gif"></img></center></div>
+
+<div class="exitexit">
+<a id="support" href="#"><h4 class="tombolkananbawah" onclick="exitFromApp()">  EXIT!  </h4></a></div>
+<div class="header"><h3 id="judulatasjalan"></h3></div>
+
+
+<!-----rumus cari baru----->
+<div style="clear:both;text-align:center;background-color:orange;font-weight:bold;color:white;font-size:32px;padding:10px;margin-bottom:5px" id="buttonsearchzz">Search <img src="find.png"></div>
+<div style="display:none;clear:both;text-align:center;background-color:silver;font-weight:bold;color:white;font-size:16px;padding:10px;margin-bottom:5px" id="buttonsearchzzwait">Load big database, wait...</div>
+<div style="clear:both;display:none" id="formsearch"><input type="text" id="search" /></div>
+<!-----rumus cari baru----->
+
+
+
+
+
+
+<div style="clear:both" id="promokhususatas"></div>
+<div id="topfive" style="clear:both"></div>
+<h1>My Bookmark</h1>
+<div id="mybookmarkchord" style="clear:both;max-height:300px;margin-bottom:10px;overflow:scroll;padding-bottom:15px"></div>
+<h1>Directory List</h1>
+<a href="band.html#2"><h4>Band Directory - A</h4></a>
+<a href="band.html#3"><h4>Band Directory - B</h4></a>
+<a href="band.html#4"><h4>Band Directory - C</h4></a>
+<a href="band.html#5"><h4>Band Directory - D</h4></a>
+<a href="band.html#6"><h4>Band Directory - E</h4></a>
+<a href="band.html#7"><h4>Band Directory - F</h4></a>
+<a href="band.html#8"><h4>Band Directory - G</h4></a>
+<a href="band.html#9"><h4>Band Directory - H</h4></a>
+<a href="band.html#10"><h4>Band Directory - I</h4></a>
+<a href="band.html#11"><h4>Band Directory - J</h4></a>
+<a href="band.html#12"><h4>Band Directory - K</h4></a>
+<a href="band.html#13"><h4>Band Directory - L</h4></a>
+<a href="band.html#14"><h4>Band Directory - M</h4></a>
+<a href="band.html#15"><h4>Band Directory - N</h4></a>
+<a href="band.html#16"><h4>Band Directory - O</h4></a>
+<a href="band.html#17"><h4>Band Directory - P</h4></a>
+<a href="band.html#18"><h4>Band Directory - Q</h4></a>
+<a href="band.html#19"><h4>Band Directory - R</h4></a>
+<a href="band.html#20"><h4>Band Directory - S</h4></a>
+<a href="band.html#21"><h4>Band Directory - T</h4></a>
+<a href="band.html#22"><h4>Band Directory - U</h4></a>
+<a href="band.html#23"><h4>Band Directory - V</h4></a>
+<a href="band.html#24"><h4>Band Directory - W</h4></a>
+<a href="band.html#25"><h4>Band Directory - X</h4></a>
+<a href="band.html#26"><h4>Band Directory - Y</h4></a>
+<a href="band.html#27"><h4>Band Directory - Z</h4></a>
+<a href="band.html#1"><h4>Band Directory - (0-9)</h4></a>
+	<br><br><br><br><br><br><br>
+
+
+</body>
+</html>

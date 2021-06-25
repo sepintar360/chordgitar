@@ -1,0 +1,56 @@
+<!DOCTYPE html> <html> <head> 
+<script>
+var idchord = window.location.hash.substr(1);
+var pecahdb = 100;
+var pecahdb2 = pecahdb; 
+for (pecahdb1 = 0; pecahdb1 < idchord;pecahdb1 = pecahdb1+pecahdb ) 
+{ pecahdb2 = pecahdb1+pecahdb; pecahdb0 = pecahdb2-pecahdb;    }
+var linkjschordmini = ''+pecahdb0+'-'+pecahdb1+'';
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />  <script src="cordova.js"></script> <script src="js/app.js"></script> <script src="xdk/init-dev.js"></script>
+
+<script type="text/javascript" src="js/head.min.js"></script>
+<script>
+head.load("css/style.css");
+head.load("js/komplit.js");
+head.load("js/chord.js");
+head.load("js/db/chord"+linkjschordmini+".js");
+head.load("js/loadchord.js");
+head.load("js/neon.js");
+
+</script>
+</head> 
+
+<body>  
+<div id="box-loadload"><center><br><br><br><br><img style="width:200px" src="loading.gif"></img></center></div>
+
+
+
+<div class="zoominout"> <span id="bookmarkya" style="font-size:40px;color:silver;cursor:pointer;"><img id="bm1" style="width:32px;" src="bm1.png"><img id="bm2" style="width:32px;display:none" src="bm2.png"></span><br><br><img style="cursor:pointer;" id="plustext" alt="Increase text size" src="zoom_in.png" onclick="resizeText(1)" /><br><br><img style="cursor:pointer" id="minustext" alt="Decrease text size" src="zoom_out.png" onclick="resizeText(-1)" /> </div> <div class="exitexit"> <a id="support" href="#"><h4 class="tombolkananbawah" onclick="exitFromApp()"> EXIT! </h4></a></div> 
+
+
+<div class="header"><h3 id="judulatasjalan"></h3></div> 
+
+<!-----rumus cari baru----->
+<div style="clear:both;text-align:center;background-color:orange;font-weight:bold;color:white;font-size:32px;padding:10px;margin-bottom:5px" id="buttonsearchzz">Search <img src="find.png"></div>
+<div style="display:none;clear:both;text-align:center;background-color:silver;font-weight:bold;color:white;font-size:16px;padding:10px;margin-bottom:5px" id="buttonsearchzzwait">Load big database, wait...</div>
+<div style="clear:both;display:none;margin-bottom:10px;" id="formsearch"><input type="text" id="search" /></div>
+<!-----rumus cari baru----->
+<div style="clear:both" id="promokhususatas"></div> 
+<center><div style="background-color:#edd393;width:88%;border-radius:0px 0px 2px 2px;-moz-border-radius:0px 0px 2px 2px;-webkit-border-radius:0px 0px 2px 2px;-khtml-border-radius:0px 0px 2px 2px;padding-bottom:5px"><select id="mySelect" onchange="changeFunc(value);" style="width:97%;"><option>Find Chord?</option></select></div></center>
+
+<table align="center" style="clear:both;background-color:#edd393;width:70%;border-radius:0px 0px 2px 2px;-moz-border-radius:0px 0px 2px 2px;-webkit-border-radius:0px 0px 2px 2px;-khtml-border-radius:0px 0px 2px 2px;"><tr>
+<td align="right">
+<input style="color:white;background-color:#7799b8;width:120px;font-size:14px;font-weight:bold;height:35px;margin-top:0px;" id="transposeDown" type="button" value="Capo Down (-)" /></td><td align="left">
+<input style="color:white;background-color:#7799b8;width:120px;font-size:14px;font-weight:bold;height:35px;margin-top:0px;" id="transposeUp" type="button" value="Capo Up (+)" /></td></tr></table><div style="clear:both"></div>
+
+
+<p id="stage" style="font-size:1.2em"></p>
+
+<div id="showchord"></div>
+<div id="listensong" style="clear:both;margin:5px"></div>
+
+
+<div style="clear:both" id="promokhususbawah"></div> <br><br><br><br><br><br><br><br><br><br> <div id="endchord"></div> 
+</body> </html>
