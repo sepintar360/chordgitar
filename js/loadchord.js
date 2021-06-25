@@ -4,7 +4,7 @@ $(document).ready(function() {
 				
 
 				$('#judulchord').append(""+tampilchord[idchord]['nama_band']+" - "+tampilchord[idchord]['judul']+"");	
-				$('#listensong').append("<center>"+localStorage.getItem('')+"</center>");
+				$('#listensong').append("<center>"+localStorage.getItem('advertisechord')+"</center>");
 				/********************/
 				cmprsstr = tampilchord[idchord]['isi'];
 				
