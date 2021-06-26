@@ -1,5 +1,5 @@
 
-var neonbasecolor="white"
+var neonbasecolor="black"
 var neontextcolor="red"
 var neontextcolor2="green"
 var flashspeed=100						// speed of flashing in milliseconds
