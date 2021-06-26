@@ -59,7 +59,7 @@ cmprsstr = cmprsstr.replace(/:x1:/g, "<br>");
 if(cmprsstr == '' || !cmprsstr || 0 === cmprsstr.length) { cmprsstr = '<br><br><br><br><center>Not Found!<br>Please Update Your Apps<br>To The Latest Version!<br><Br><hr>Or Contact Us<br>Support@ms-room.com</center>'; }
 				/********************/
 			    $('#stage').append("<span class=\"chord\">"+cmprsstr+"<br><br><hr>"+chordposition+"</span>");
-				$('body').append('');
+				$('body').append('<div class="homehome"><style>[data-tip] {position:relative;}[data-tip]:after { 	display:none; 	content:attr(data-tip); 	position:absolute; 	top:-60px; 	left:-120px; 	padding:5px 8px; 	background:#1a1a1a; 	color:#fff; 	z-index:9; 	font-size: 10px; 	height:18px; 	line-height:18px; 	-webkit-border-radius: 3px; 	-moz-border-radius: 3px; 	border-radius: 3px; 	white-space:nowrap; 	word-wrap:normal; border:solid 1px orange; } [data-tip]:hover:before, [data-tip]:hover:after { 	display:block; } #xspeedscroll {width:30px;font-size:10px;margin:0px;padding:2px;} #xspeedscroll:hover {width:55px; padding: 10px;font-size:24px; }</style><span data-tip="<10: Faster | =10: Normal | >10: Slower"></div><script>/*$(document).ready(function(){$("#box-links").localScroll({target:"body"});});*/$(document).ready(function() {$("#box-links").click(function() {$("#box-links").hide("slow");$("#box-links-1").show("slow");});$("#box-links-1").click(function() {$("#box-links-1").hide("slow");$("#box-links").show("slow");});});</script>');
 				
 });
 
