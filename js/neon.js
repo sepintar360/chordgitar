@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 $(document).ready(function() {
 $('#buttonsearchzz').click(function() {
-$('#buttonsearchzz').hide();
+$('#buttonsearchzz').show();
 $('#buttonsearchzzwait').show();
 
 var urloooo = "https://chordgitar.pages.dev/js/dbkunci.js";
