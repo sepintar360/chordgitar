@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 				$('#judulchord').append(""+tampilchord[idchord]['nama_band']+" - "+tampilchord[idchord]['judul']+"");	
 				$('#listensong').append(""+localStorage.getItem('advertisechord')+"");
-	                        $('#namaband').append("<a id="support" href="album.html#'+tampilchord[idchord]["id_abjad"]+'#'+tampilchord[idchord]["id_band"]+'#'+tampilchord[idchord]["nama_band"]+'"><span class="afterfirst">Chord "+tampilchord[idchord]['nama_band']+"</span></a>");
+	                        $('#namaband').append("<a href="album.html#'+tampilchord[idchord]["id_abjad"]+'#'+tampilchord[idchord]["id_band"]+'#'+tampilchord[idchord]["nama_band"]+'">Chord "+tampilchord[idchord]['nama_band']+" Lainnya</a>");
 	
 				/********************/
 				cmprsstr = tampilchord[idchord]['isi'];
