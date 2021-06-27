@@ -1,5 +1,11 @@
 
-var neonbasecolor="black"
+var neonbasecolor="green"
+var neontextcolor="green"
+var neontextcolor2="green"
+var flashspeed=100						// speed of flashing in milliseconds
+var flashingletters=3						// number of letters flashing in neontextcolor
+var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
+var flashpause=0						// the pause between flash-cycles in milliseconds
 
 ///No need to edit below this line/////
 
