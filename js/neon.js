@@ -1,11 +1,5 @@
 
 var neonbasecolor="black"
-var neontextcolor="red"
-var neontextcolor2="green"
-var flashspeed=100						// speed of flashing in milliseconds
-var flashingletters=3						// number of letters flashing in neontextcolor
-var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
-var flashpause=0						// the pause between flash-cycles in milliseconds
 
 ///No need to edit below this line/////
 
@@ -88,17 +82,17 @@ maxResults:500,
 			$( "#search" ).val( ui.item.P );
 			return false;
 		}
-	}).data( "autocomplete" )._renderItem = function( ul, item ) { 
+	}).data( "autocomplete" )._renderItem = function( ol, item ) { 
 		return $( "<li></li>" )
 			.data( "item.autocomplete", item )
 			.append( "<a href ='chord.html#" + (item.P.split("@")[0]) + "' onClick='window.location = \"chord.html#" + (item.P.split("@")[0]) + "\";location.reload();' ><strong style=\"color:#2988bc;\">&sung; " + (item.P.split("@")[1]) + "</strong></a>" )
-			.appendTo("ul");
+			.appendTo("ol");
 		};		
 $('#buttonsearchzzwait').hide('slow');
 $('#formsearch').show('slow');
 });
 		
-document.getElementById("search").placeholder = " Search Songs...";
+document.getElementById("search").placeholder = " Cari Lagu...";
 localStorage.setItem("Count_Ganalytics", "");
 admob.rewardvideo.show();
 
