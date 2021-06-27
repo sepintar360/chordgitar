@@ -663,8 +663,17 @@ head.load("https://chordgitar.pages.dev/js/neon.js");
  function openNav(){document.getElementById("myTopnav").style.left="0"}function closeNav(){document.getElementById("myTopnav").style.left="-250px"}function menuoverlayOn(){document.getElementById("menuoverlay").style.display="block"}function menuoverlayOff(){document.getElementById("menuoverlay").style.display="none"}function addClassBody(){var e,t,a;e=document.body,t="flow",a=e.className.split(" "),-1==a.indexOf(t)&&(e.className+=" "+t)}function removeClassBody(){var e=document.body;e.className=e.className.replace(/\bflow\b/g,"")}function scrollFunction(){document.body.scrollTop>200||document.documentElement.scrollTop>200?document.getElementById("backToTop").style.display="block":document.getElementById("backToTop").style.display="none"}function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}for(var btns=document.getElementsByClassName("dropbtn"),i=0;i<btns.length;i++)btns[i].addEventListener("click",function(){var e=document.getElementsByClassName("active");e.length>0&&(e[0].className=e[0].className.replace(" active","")),this.className+=" active"});window.onclick=function(e){if(!e.target.matches(".dropbtn")){var t,a=document.getElementsByClassName("dropbtn");for(t=0;t<a.length;t++){var n=a[t];n.classList.contains("active")&&n.classList.remove("active")}}};
 /*]]>*/
 </script>
-
-<!--<head>
-<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2614080869690264951&amp;zx=87052504-9684-474c-ac8f-9db241f3e630' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2614080869690264951&amp;zx=87052504-9684-474c-ac8f-9db241f3e630' rel='stylesheet'/></noscript>
+<script>
+//<![CDATA[
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').then(registration => {
+      }).catch(registrationError => {
+        console.log('SW registration failed: ', registrationError);
+      });
+    });
+  }
+//]]>
+</script>
  </body>
 </html>
