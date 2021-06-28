@@ -35,7 +35,7 @@ Array.prototype.removeDuplicate = function(){
 var chordposition = chordposition;
 chordposition = chordposition.replace(/[\/]/g," ").split(" ").removeDuplicate().join(":after::before:")+":after:";
 chordposition = chordposition.replace(/#/g, "kr3s");
-chordposition = chordposition.replace(/:before:(.*?):after:/g, "<img loading='lazy' src='https://chordgitar.pages.dev/diagram/$1.png' style='width:24%'>");
+chordposition = chordposition.replace(/:before:(.*?):after:/g, "<img loading='lazy' src='https://chordgitar.xyz/diagram/$1.png' style='width:24%'>");
 chordposition = chordposition.replace(/(:before:|:after:)/g, "");
 
 cmprsstr = cmprsstr.replace(/http(.*?):x/g, ":x");
