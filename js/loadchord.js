@@ -18,11 +18,11 @@ cmprsstr = cmprsstr.replace(/Eb/g,"D#");
 				
 				
 cmprsstr = cmprsstr.replace(/A:s1:([a-z])/g, "a:s1:$1");
-cmprsstr = cmprsstr.replace(/:([A-Z])(.*?):/g, ":<span style=\"color:#800000;font-weight:bold;\">$1$2</span>:");
+cmprsstr = cmprsstr.replace(/:([A-Z])(.*?):/g, ":<span class=\"warnachord\">$1$2</span>:");
 
 /*************************************/
-chordposition = cmprsstr.replace(/<\/span>(.*?)<span style=\"color:#800000;font-weight:bold;\">/g, " ");
-chordposition = chordposition.replace(/(.*?)<span style=\"color:#800000;font-weight:bold;\">/g, " ");
+chordposition = cmprsstr.replace(/<\/span>(.*?)<span class=\"warnachord\">/g, " ");
+chordposition = chordposition.replace(/(.*?)<span class=\"warnachord\">/g, " ");
 chordposition = chordposition.replace(/<\/span>(.*?)$/g, " ");
 
 Array.prototype.removeDuplicate = function(){
@@ -60,7 +60,7 @@ cmprsstr = cmprsstr.replace(/:x1:/g, "<br>");
 if(cmprsstr == '' || !cmprsstr || 0 === cmprsstr.length) { cmprsstr = '<br><br><br><br><center>Not Found!<br>Please Update Your Apps<br>To The Latest Version!<br><Br><hr>Or Contact Us<br>Support@ms-room.com</center>'; }
 				/********************/
 			    $('#stage').append("<span class=\"chord\">"+cmprsstr+"<br><br><hr>"+chordposition+"</span>");
-				$('body').append('<div class="homehome" style="display:none"><span id="box-links"><a href="#endchord"><span id="scrollit" class="afterfirst"> Scroll </span></a></span> <span id="box-links-1"> <a href="#"><span id="stopscrollit" class="afterfirst"> Stop </span></a></span> <style>[data-tip] {position:relative;}[data-tip]:after { 	display:none; 	content:attr(data-tip); 	position:absolute; 	top:-60px; 	left:-120px; 	padding:5px 8px; 	background:#1a1a1a; 	color:#fff; 	z-index:9; 	font-size: 10px; 	height:18px; 	line-height:18px; 	-webkit-border-radius: 3px; 	-moz-border-radius: 3px; 	border-radius: 3px; 	white-space:nowrap; 	word-wrap:normal; border:solid 1px orange; } [data-tip]:hover:before, [data-tip]:hover:after { 	display:block; } #xspeedscroll {width:30px;font-size:10px;margin:0px;padding:2px;} #xspeedscroll:hover {width:55px; padding: 10px;font-size:24px; }</style><span data-tip="<10: Faster | =10: Normal | >10: Slower"><input  style="" type="number" id="xspeedscroll" onchange="scrlF(this.value)"></span> </div><script>/*$(document).ready(function(){$("#box-links").localScroll({target:"body"});});*/$(document).ready(function() {$("#box-links").click(function() {$("#box-links").hide("slow");$("#box-links-1").show("slow");});$("#box-links-1").click(function() {$("#box-links-1").hide("slow");$("#box-links").show("slow");});});</script>');
+				$('body').append("");
 				
 });
 
