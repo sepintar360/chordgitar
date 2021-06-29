@@ -57,7 +57,7 @@ cmprsstr = cmprsstr.replace(/:x3:/g, "<br><br><br>");
 cmprsstr = cmprsstr.replace(/:x2:/g, "<br><br>");
 cmprsstr = cmprsstr.replace(/:x1:/g, "<br>");
 
-if(cmprsstr == '' || !cmprsstr || 0 === cmprsstr.length) { cmprsstr = '<br><br><br><br><center>Not Found!<br>Please Update Your Apps<br>To The Latest Version!<br><Br><hr>Or Contact Us<br>Support@ms-room.com</center>'; }
+if(cmprsstr == '' || !cmprsstr || 0 === cmprsstr.length) { cmprsstr = '<br>'; }
 				/********************/
 			    $('#stage').append("<span class=\"chord\">"+cmprsstr+"<br><br><hr>"+chordposition+"</span>");
 				$('body').append("");
@@ -162,20 +162,6 @@ $('#bm2').hide('slow'); } else {
 	$('#bm1').hide('slow');
 	$('#bm2').show('slow');
 localStorage.setItem(halamanchordcccckey, message); }
-	
-/*****************
-	$('#bm1').hide('slow');
-if (!localStorage.getItem("cccc"+tampilchord[idchord]['id'])){
-	$('#bm2').show('slow');
-localStorage.setItem("cccc"+tampilchord[idchord]['id'], ""+tampilchord[idchord]['nama_band']+" - "+tampilchord[idchord]['judul']+"");
-}
-else
-{
-localStorage.removeItem("cccc"+tampilchord[idchord]['id']);
-$('#bm1').show('slow');
-$('#bm2').hide('slow');
-}
-********************/
 });
 
 $(document).ready(function() { 
@@ -185,24 +171,7 @@ $('#bm2').show('slow'); } else {
 $('#bm1').show('slow');
 $('#bm2').hide('slow'); }
 	
-/*******
-if (!localStorage.getItem("cccc"+tampilchord[idchord]['id'])){
-$('#bm1').show('slow');
-$('#bm2').hide('slow');
-}
-else
-{
-$('#bm1').hide('slow');
-$('#bm2').show('slow');
-}
-*******/
 });
-
-
-
-
-
-
 var match;
 var chords =
     ['C','C#','D','Eb','E','F','F#','G','Ab','A','Bb','B','C','Db','D','D#','E','F','Gb','G','G#','A','A#','B'];
@@ -255,31 +224,3 @@ output = output.replace(/Eb/g,"D#");
         $(this).html(output);
     });
 });
-
-
-
-$(document).ready(function(){
-   
-	if(!localStorage.getItem("scrl")) { localStorage.setItem("scrl", "10"); };
-	document.getElementById("xspeedscroll").value = localStorage.getItem("scrl");
-	
-	
-	
-	$('#box-links').click(function() {
-	var xspeedscroll = document.getElementById("xspeedscroll").value;
-	if(xspeedscroll < 1 || xspeedscroll > 100) { var xspeedscroll = 10; };
-	
-	var $elem = $('body');
-	var speed = (xspeedscroll * 10000 *5);
-                $('body,html').animate({ scrollTop: $elem.height()}, speed, 'linear');
-                return false;
-	
-	});
-    
-    
-});
-
-function scrlF(valscrl) { 
-if(valscrl < 1 || valscrl > 100) { valscrl = 10; };
-localStorage.setItem("scrl", ""+valscrl+"");	
-};
