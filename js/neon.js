@@ -75,7 +75,7 @@ $('#buttonsearchzz').click(function() {
 $('#buttonsearchzz').show();
 $('#buttonsearchzzwait').show();
 
-var urloooo = "https://chordgitar.pages.dev/js/dbkunci.js";
+var urloooo = "/js/dbkunci.js";
 $.getScript( urloooo, function() {
 
 		
