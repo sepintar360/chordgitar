@@ -4,7 +4,7 @@ $('#buttonsearchzz').click(function() {
 $('#buttonsearchzz').show();
 $('#buttonsearchzzwait').show();
 
-var urloooo = "/js/dbkunci.js";
+var urloooo = "https://chordgitar.xyz/js/dbkunci.js";
 $.getScript( urloooo, function() {
 
 		
