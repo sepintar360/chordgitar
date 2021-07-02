@@ -4,7 +4,8 @@
 <!-- chordgitar.xyz -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<title>Contact Admin</title>
+<title>Chord Gitar Artis dan Band Nama Depan Link</title> 
+<meta content="Kumpulan Chord Gitar Kunci dasar mudah, Lirik dan Lagu Artis atau Band Nama Depan Link" name="description"/>
 <meta content='width=device-width, initial-scale=1' name='viewport'/>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
 <meta content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' name='robots'/>
@@ -136,67 +137,24 @@ ol.cari li{list-style-type:none;border-bottom:1px dotted green;padding: 7px 0px;
 <div class='post-container'>
 <div class='main section' id='main'><div class='widget Blog' data-version='2' id='Blog1'>
 <article class='post'>
+<p><a href="/p/band.html">band</a></p><p><a href="/p/album.html">album</a></p><p><a href="/p/chord.html">Chord</a></p><p><a href="/p/index.html">Index</a></p><p><a href="/p/about.html">About</a></p><p><a href="/p/privacy.html">Privat</a></p><p><a href="/p/disclaimer.html">Disclamer</a></p><p><a href="/p/contact.html">Contact</a></p><p><br /></p>
 
-<style>
-input, textarea {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-button {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;font-weight:bold;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
-div.form {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding:5px;
-}
-</style>
-<h1>Formulir Contact ChordGitar.xyz</h1>        
-<div class="form">
-  <form method="post" action="https://blogmini.000webhostapp.com/send.php" enctype="multipart/form-data">
-    <label>Name</label>
-    <input required="" type="text" name="namamu" placeholder="Your name..."/>
-
-    <label>Mail</label>
-    <input required="" type="email" name="emailmu" placeholder="Your Mail..."/>
-
-    <label>Messege</label>
-    <textarea required="" rows="5" name="pesanmu" placeholder="Message..."></textarea>
-  
-    <button type="submit">Kirim Pesan</button>
-  </form>
-</div>
-
-
-
-
-  
-  
-  
- 
-
-
-
-
-
+<ul>
+<li><a href="/p/a-b.html">a-b</a></li>
+<li><a href="/p/c-d.html">c-d</a></li>
+<li><a href="/p/e-f.html">e-f</a></li>
+<li><a href="/p/g-h.html">g-h</a></li>
+<li><a href="/p/i-j.html">i-j</a></li>
+<li><a href="/p/k-l.html">k-l</a></li>
+<li><a href="/p/m-n.html">m-n</a></li>
+<li><a href="/p/o-p.html">o-p</a></li>
+<li><a href="/p/q-r.html">q-r</a></li>
+<li><a href="/p/s-t.html">s-t</a></li>
+<li><a href="/p/u-v.html">u-v</a></li>
+<li><a href="/p/w-x.html">w-x</a></li>
+<li><a href="/p/y-z.html">y-z</a></li>
+<li><a href="/p/0-9.html">0-9</a></li>
+</ul>
 </article>
 </div></div>
 </div>
