@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-				$('head').append("<title>Chord Gitar "+tampilchord[idchord]['nama_band']+" - "+tampilchord[idchord]['judul']+"</title>");
+				$('title').append(""+tampilchord[idchord]['nama_band']+" - "+tampilchord[idchord]['judul']+"");
 				
 
 				$('#judulchord').append(""+tampilchord[idchord]['nama_band']+" - "+tampilchord[idchord]['judul']+"");	
